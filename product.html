@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/product.css">
+    <title>Product Page</title>
+</head>
+<body>
+    <div>
+        <div class="nav">
+          <a href="index.html">Ad Page</a>
+          <a href="product.html" >Product Page</a>
+          <a href="wishlist.html" >Wishlist Page</a>
+        </div>
+        <h1 class="tag">Welcome To Product Page</h1>
+    </div>
+    <div class="filter">
+        <select name="" id="filterByType">
+          <option value="">Filter by type</option>
+          <option value="Table">Table</option>
+          <option value="Bed">Bed</option>
+          <option value="Chair">Chair</option>
+          <option value="Sofa">Sofa</option>
+        </select>
+        <select name="" id="sortByPrice">
+          <option value="">Sort by Price</option>
+          <option value="lth">Low to High</option>
+          <option value="htl">High to Low</option>
+        </select>
+      </div>
+      <div id="product"></div>
+      <div id="productModal" class="productmodal">
+          <div class="productmodal-content">
+            <span class="close">&times;</span>
+            <h2 id="editDetails" style='width:fit-content;margin:auto'>Edit Detail</h2>
+            <label for="type">Type Of Furniture</label>
+            <br/>
+            <select name="" id="type">
+              <option value="">Select Furniture type</option>
+              <option value="Table">Table</option>
+              <option value="Bed">Bed</option>
+              <option value="Chair">Chair</option>
+              <option value="Sofa">Sofa</option>
+            </select required>
+            <br />
+            <br />
+            <label for="year">Year of Purchase</label>
+            <br />
+            <select name="" id="year">
+              <option value="">Select Year</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+            </select required>
+            <br />
+            <br />
+            <label for="desc">Description</label>
+            <br />
+            <input id="desc" type=text placeholder="Description" required />
+            <br />
+            <br />
+            <label for="price">Price</label>
+            <br />
+            <input id="price" type=text placeholder="Price" required />
+            <button style="cursor: pointer;" id="submission">Submit</button>
+        </div>
+      </div>
+</body>
+</html>
+<script src="./Script/product.js"></script>

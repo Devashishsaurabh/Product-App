@@ -1,0 +1,184 @@
+*{
+    top:0;
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    height:50px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: thistle;
+}
+.nav >a{
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    color:black
+  }
+  .nav >a:hover{
+      color:rgb(52, 52, 52);
+  }
+.tag{
+    text-align: center;
+    margin-top: 2vw;
+}
+#product{
+    width:80%;
+    margin: auto;
+    margin-top: 2%;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap:10px;  
+}
+.div{
+    text-align: center;
+    padding-bottom: 2%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.div1{
+    margin:3%;
+    position: relative;
+}
+.img{
+    
+    border-radius: 10px;
+    width:93%;
+    height: 50%;
+}
+.div>p{
+    margin-top: 2%;
+}
+.div>p:nth-child(4){
+   color:goldenrod
+}
+.div>p:nth-child(5){
+    color:green
+ }
+.btndiv{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+.pricebox{
+    margin-top: 4%;
+    display:flex;
+    justify-content: space-around;
+}
+.pricebox >p{
+    color:green
+}
+.pricebox >strike{
+    color:gray
+}
+.filter{
+    text-align: center;
+    margin-top: 2%;
+}
+.productmodal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100vh;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  .productmodal-content {
+    background-color:rgb(253, 126, 57);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 500px;
+    display:flex;
+    flex-direction: column;
+  }
+.productmodal-content button{
+    padding:20px 40px 20px 40px;
+    margin: auto;
+    background-color: rgb(15, 207, 15);
+    margin-top: 3%;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+}
+label{
+    margin-left: 10%;
+}
+#type,#year{
+    width:80%;
+    height:30px;
+    margin: auto;
+    margin-top: -10px;
+}
+.productmodal-content input{
+      height: 35px;
+      width: 80%;
+      margin: auto;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+#delete{
+    background-color: transparent;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1345/1345874.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    padding-left: 25px;
+    padding-right: 17px;
+    padding-top: 17px;
+    padding-bottom: 25px;
+    border:0;
+    cursor:pointer;
+}
+#edit{
+    background-color: transparent;
+    background-image: url('https://www.freeiconspng.com/thumbs/edit-icon-png/edit-new-icon-22.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    font-size: 16px;
+    padding-left: 25px;
+    padding-right: 17px;
+    padding-top: 17px;
+    padding-bottom: 25px;
+    border:0;
+    cursor:pointer;
+}
+#wishlist{
+    position: absolute;
+    left:70%;
+    right:25%;
+    background-color: transparent;
+    background-image: url("https://icons.veryicon.com/png/o/commerce-shopping/fine-edition-mall-icon/wishlist-1.png");
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    font-size: 16px;
+    padding-left: 25px;
+    padding-right: 17px;
+    padding-top: 17px;
+    padding-bottom: 25px;
+    border:0;
+    cursor:pointer;
+}
